@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/*.log
+
+# Temporary files
+*.tmp
+*.temp
+cleanup_backup/
+
+# API Keys (keep config.py structure but protect sensitive data)
+.env
+*.key
+
+# Large data files (keep structure but avoid large files)
+data/raw/massive_*.csv
+data/raw/*_fixture_events*.csv
+data/raw/*_fixture_statistics*.csv
+data/raw/*_fixture_lineups*.csv
+
+# Backup files
+*.bak
+*_backup_*
+
+# Windows
+auto_retrain.bat.lnk
