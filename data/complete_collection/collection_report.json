@@ -1,0 +1,33 @@
+{
+  "collection_timestamp": "2025-08-26T21:30:49.043474",
+  "duration_minutes": 66.43768253333333,
+  "api_calls_made": 2191,
+  "data_directory": "data\\complete_collection",
+  "collection_stats": {
+    "leagues_info": 7,
+    "seasons_data": 7,
+    "team_statistics": 202,
+    "venues": 202,
+    "teams": 202,
+    "players": 3544,
+    "player_statistics": 889,
+    "match_statistics": 217,
+    "match_events": 217,
+    "match_lineups": 217,
+    "match_player_stats": 217,
+    "complete_matches": 217,
+    "odds": 7,
+    "predictions": 1,
+    "timezone": 1
+  },
+  "leagues_processed": [
+    39,
+    140,
+    61,
+    78,
+    135,
+    2,
+    3
+  ],
+  "season": 2025
+}

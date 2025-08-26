@@ -1,0 +1,18 @@
+{
+  "get": "predictions",
+  "parameters": {
+    "league": "39",
+    "season": "2025"
+  },
+  "errors": {
+    "fixture": "The Fixture field is required.",
+    "league": "The League field do not exist.",
+    "season": "The Season field do not exist."
+  },
+  "results": 0,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": []
+}
