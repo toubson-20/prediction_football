@@ -1,0 +1,14 @@
+{
+  "creation_timestamp": "2025-08-24T22:12:27.471501",
+  "season_updated": 2025,
+  "total_samples": 96,
+  "total_features": 20,
+  "numeric_features": 17,
+  "leagues_included": [
+    "Premier League",
+    "La Liga",
+    "Ligue 1",
+    "Bundesliga",
+    "Serie A"
+  ]
+}
