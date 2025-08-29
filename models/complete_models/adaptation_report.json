@@ -1,5 +1,5 @@
 {
-  "adaptation_timestamp": "2025-08-26T21:33:47.331944",
+  "adaptation_timestamp": "2025-08-29T21:13:11.228378",
   "total_features": 53,
   "feature_names": [
     "points",
@@ -64,20 +64,20 @@
       "next_match_result": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.12141799050224755,
-          "mse": 0.029432071130798466,
-          "r2": 0.8822717154768062,
+          "mae": 0.11816871387631282,
+          "mse": 0.02792405368725817,
+          "r2": 0.8883037852509673,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_39_next_match_result.joblib",
         "scaler_path": "models\\complete_models\\complete_scaler_39_next_match_result.joblib"
       },
       "goals_scored": {
-        "model_type": "random_forest",
+        "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.16829695767195818,
-          "mse": 0.06105372498232857,
-          "r2": 0.9529224289292888,
+          "mae": 0.093636201804562,
+          "mse": 0.009340538579562793,
+          "r2": 0.9557544558584459,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_39_goals_scored.joblib",
@@ -86,9 +86,9 @@
       "goals_conceded": {
         "model_type": "random_forest",
         "metrics": {
-          "mae": 0.4566523869648871,
-          "mse": 0.3350644339453229,
-          "r2": 0.20577319361108637,
+          "mae": 0.26545423633304827,
+          "mse": 0.11519974027884766,
+          "r2": 0.31476561985893303,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_39_goals_conceded.joblib",
@@ -97,9 +97,9 @@
       "clean_sheet": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.09788455523633813,
-          "mse": 0.012535446007939894,
-          "r2": 0.9498582159682404,
+          "mae": 0.10044445820880493,
+          "mse": 0.012976395782847813,
+          "r2": 0.9480944168686087,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_39_clean_sheet.joblib",
@@ -108,9 +108,9 @@
       "both_teams_score": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.09838029599575726,
-          "mse": 0.012556288770942958,
-          "r2": 0.9497748449162282,
+          "mae": 0.09743439290623805,
+          "mse": 0.012437181660001694,
+          "r2": 0.9502512733599933,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_39_both_teams_score.joblib",
@@ -119,9 +119,9 @@
       "over_2_5_goals": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.25005373892696126,
-          "mse": 0.16973258241681125,
-          "r2": 0.0947595604436734,
+          "mae": 0.23698531456835195,
+          "mse": 0.16272071361251378,
+          "r2": 0.13215619406659318,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_39_over_2_5_goals.joblib",
@@ -130,9 +130,9 @@
       "win_probability": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.12141799050224755,
-          "mse": 0.029432071130798466,
-          "r2": 0.8822717154768062,
+          "mae": 0.11816871387631282,
+          "mse": 0.02792405368725817,
+          "r2": 0.8883037852509673,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_39_win_probability.joblib",
@@ -141,9 +141,9 @@
       "draw_probability": {
         "model_type": "random_forest",
         "metrics": {
-          "mae": 0.12168710918710912,
-          "mse": 0.017361643219570573,
-          "r2": 0.7222137084868708,
+          "mae": 0.11502044252044247,
+          "mse": 0.015280585018512375,
+          "r2": 0.7555106397038021,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_39_draw_probability.joblib",
@@ -152,20 +152,20 @@
       "lose_probability": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.01481981096982076,
-          "mse": 0.000266694760754593,
-          "r2": 0.9957328838279265,
+          "mae": 0.014487802540480965,
+          "mse": 0.0002351317614745514,
+          "r2": 0.9962378918164072,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_39_lose_probability.joblib",
         "scaler_path": "models\\complete_models\\complete_scaler_39_lose_probability.joblib"
       },
       "expected_goals": {
-        "model_type": "random_forest",
+        "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.16829695767195818,
-          "mse": 0.06105372498232857,
-          "r2": 0.9529224289292888,
+          "mae": 0.093636201804562,
+          "mse": 0.009340538579562793,
+          "r2": 0.9557544558584459,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_39_expected_goals.joblib",
@@ -174,9 +174,9 @@
       "expected_assists": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.08214973460384928,
-          "mse": 0.023743305908600253,
-          "r2": 0.8618571292590531,
+          "mae": 0.08259123653793957,
+          "mse": 0.023899819923765032,
+          "r2": 0.8609465022617308,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_39_expected_assists.joblib",
@@ -187,9 +187,9 @@
       "next_match_result": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.018646540234368382,
-          "mse": 0.0004599017007659348,
-          "r2": 0.9973242082864527,
+          "mae": 0.02210490537703118,
+          "mse": 0.0007279390641221945,
+          "r2": 0.99576471817238,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_140_next_match_result.joblib",
@@ -198,9 +198,9 @@
       "goals_scored": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.23272704420318574,
-          "mse": 0.08184720441595764,
-          "r2": 0.8503365404965346,
+          "mae": 0.10124187198626008,
+          "mse": 0.013567936098336938,
+          "r2": 0.7895533607063286,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_140_goals_scored.joblib",
@@ -209,9 +209,9 @@
       "goals_conceded": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.410710976989194,
-          "mse": 0.23926199375829857,
-          "r2": 0.7748122411686602,
+          "mae": 0.1680998521152235,
+          "mse": 0.0440820309220216,
+          "r2": 0.7260022296457642,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_140_goals_conceded.joblib",
@@ -220,9 +220,9 @@
       "clean_sheet": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.1144585382746859,
-          "mse": 0.0314054904736666,
-          "r2": 0.4975121524213344,
+          "mae": 0.10678682850435985,
+          "mse": 0.033641883433945065,
+          "r2": 0.46172986505687896,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_140_clean_sheet.joblib",
@@ -242,9 +242,9 @@
       "over_2_5_goals": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.020765215225258024,
-          "mse": 0.0012568681013625537,
-          "r2": 0.9932967034593997,
+          "mae": 0.019992935756165824,
+          "mse": 0.0010943933868864171,
+          "r2": 0.9941632352699391,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_140_over_2_5_goals.joblib",
@@ -253,9 +253,9 @@
       "win_probability": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.018646540234368382,
-          "mse": 0.0004599017007659348,
-          "r2": 0.9973242082864527,
+          "mae": 0.02210490537703118,
+          "mse": 0.0007279390641221945,
+          "r2": 0.99576471817238,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_140_win_probability.joblib",
@@ -264,9 +264,9 @@
       "draw_probability": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.007367121116377132,
-          "mse": 0.00010650322177638082,
-          "r2": 0.9977279312687706,
+          "mae": 0.007587622401707293,
+          "mse": 0.00011199713118087621,
+          "r2": 0.9976107278681413,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_140_draw_probability.joblib",
@@ -275,9 +275,9 @@
       "lose_probability": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.22204241404500957,
-          "mse": 0.0981007630351195,
-          "r2": 0.607596947859522,
+          "mae": 0.2291800283786022,
+          "mse": 0.10431485531351561,
+          "r2": 0.5827405787459375,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_140_lose_probability.joblib",
@@ -286,9 +286,9 @@
       "expected_goals": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.23272704420318574,
-          "mse": 0.08184720441595764,
-          "r2": 0.8503365404965346,
+          "mae": 0.10124187198626008,
+          "mse": 0.013567936098336938,
+          "r2": 0.7895533607063286,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_140_expected_goals.joblib",
@@ -297,9 +297,9 @@
       "expected_assists": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.0700641779794279,
-          "mse": 0.009341467539320254,
-          "r2": 0.8505365193708759,
+          "mae": 0.07420661899738608,
+          "mse": 0.009814430853332785,
+          "r2": 0.8429691063466754,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_140_expected_assists.joblib",
@@ -310,9 +310,9 @@
       "next_match_result": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.08211426637200032,
-          "mse": 0.009598637763374314,
-          "r2": 0.846421795786011,
+          "mae": 0.08159276433354065,
+          "mse": 0.009571635872928938,
+          "r2": 0.846853826033137,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_61_next_match_result.joblib",
@@ -321,9 +321,9 @@
       "goals_scored": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.26840902897659347,
-          "mse": 0.15814628323952398,
-          "r2": 0.4939318936335233,
+          "mae": 0.07870746154977834,
+          "mse": 0.015100538621673758,
+          "r2": 0.6536484226568082,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_61_goals_scored.joblib",
@@ -332,9 +332,9 @@
       "goals_conceded": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.05605034024502798,
-          "mse": 0.0051788780174852195,
-          "r2": 0.9877241409955906,
+          "mae": 0.07686249394300299,
+          "mse": 0.006544672031129479,
+          "r2": 0.9610707951977819,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_61_goals_conceded.joblib",
@@ -343,9 +343,9 @@
       "clean_sheet": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.0839903200177036,
-          "mse": 0.012722359393635618,
-          "r2": 0.9491105624254575,
+          "mae": 0.0854767457441364,
+          "mse": 0.013204477382509303,
+          "r2": 0.9471820904699628,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_61_clean_sheet.joblib",
@@ -354,9 +354,9 @@
       "both_teams_score": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.06475871566178118,
-          "mse": 0.008184583103072449,
-          "r2": 0.9672616675877101,
+          "mae": 0.06691639235541585,
+          "mse": 0.00875938540959692,
+          "r2": 0.9649624583616123,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_61_both_teams_score.joblib",
@@ -365,9 +365,9 @@
       "win_probability": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.08211426637200032,
-          "mse": 0.009598637763374314,
-          "r2": 0.846421795786011,
+          "mae": 0.08159276433354065,
+          "mse": 0.009571635872928938,
+          "r2": 0.846853826033137,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_61_win_probability.joblib",
@@ -376,8 +376,8 @@
       "draw_probability": {
         "model_type": "random_forest",
         "metrics": {
-          "mae": 0.05802777777777778,
-          "mse": 0.004518782407407408,
+          "mae": 0.057194444444444444,
+          "mse": 0.0043619305555555555,
           "r2": 0.0,
           "feature_count": 53
         },
@@ -387,9 +387,9 @@
       "lose_probability": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.04164552176757023,
-          "mse": 0.003158209293835617,
-          "r2": 0.9494686512986301,
+          "mae": 0.04263264673324526,
+          "mse": 0.004377332312888438,
+          "r2": 0.929962682993785,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_61_lose_probability.joblib",
@@ -398,9 +398,9 @@
       "expected_goals": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.26840902897659347,
-          "mse": 0.15814628323952398,
-          "r2": 0.4939318936335233,
+          "mae": 0.07870746154977834,
+          "mse": 0.015100538621673758,
+          "r2": 0.6536484226568082,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_61_expected_goals.joblib",
@@ -409,9 +409,9 @@
       "expected_assists": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.0857219215973146,
-          "mse": 0.01028270425393301,
-          "r2": 0.7806356425827624,
+          "mae": 0.09020273820782967,
+          "mse": 0.011076658480489679,
+          "r2": 0.7636979524162202,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_61_expected_assists.joblib",
@@ -422,9 +422,9 @@
       "next_match_result": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.004536270506529284,
-          "mse": 5.0297847978169626e-05,
-          "r2": 0.9997317448107831,
+          "mae": 0.004653904807955957,
+          "mse": 5.163657542446722e-05,
+          "r2": 0.9997246049310695,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_78_next_match_result.joblib",
@@ -433,9 +433,9 @@
       "goals_scored": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 1.2549422743949599,
-          "mse": 2.9166599908471915,
-          "r2": -0.33333028153014466,
+          "mae": 0.24437382690794257,
+          "mse": 0.11008308045273657,
+          "r2": -0.14536108516367685,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_78_goals_scored.joblib",
@@ -444,9 +444,9 @@
       "goals_conceded": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.06803445405184239,
-          "mse": 0.009610928771698307,
-          "r2": 0.9919065862975173,
+          "mae": 0.02644575720318695,
+          "mse": 0.001188363829408512,
+          "r2": 0.9950531527746401,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_78_goals_conceded.joblib",
@@ -455,9 +455,9 @@
       "clean_sheet": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.0010595767723420163,
-          "mse": 2.118173362097755e-06,
-          "r2": 0.9999887030754021,
+          "mae": 0.0013134660121900872,
+          "mse": 3.4103589133221863e-06,
+          "r2": 0.9999818114191289,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_78_clean_sheet.joblib",
@@ -466,9 +466,9 @@
       "both_teams_score": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.0009020903140335773,
-          "mse": 1.5678243799807128e-06,
-          "r2": 0.9999916382699734,
+          "mae": 0.001362963571889214,
+          "mse": 3.215505103818073e-06,
+          "r2": 0.9999828506394463,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_78_both_teams_score.joblib",
@@ -477,9 +477,9 @@
       "over_2_5_goals": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.021756621341049047,
-          "mse": 0.001330822559165903,
-          "r2": 0.9929022796844486,
+          "mae": 0.002624879091056626,
+          "mse": 1.224563819587376e-05,
+          "r2": 0.999934689929622,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_78_over_2_5_goals.joblib",
@@ -488,9 +488,9 @@
       "win_probability": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.004536270506529284,
-          "mse": 5.0297847978169626e-05,
-          "r2": 0.9997317448107831,
+          "mae": 0.004653904807955957,
+          "mse": 5.163657542446722e-05,
+          "r2": 0.9997246049310695,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_78_win_probability.joblib",
@@ -499,9 +499,9 @@
       "draw_probability": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.026971222480661083,
-          "mse": 0.0008190388502937157,
-          "r2": 0.9956317927984335,
+          "mae": 0.026980644744348206,
+          "mse": 0.0008192605452737307,
+          "r2": 0.9956306104252067,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_78_draw_probability.joblib",
@@ -521,9 +521,9 @@
       "expected_goals": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 1.2549422743949599,
-          "mse": 2.9166599908471915,
-          "r2": -0.33333028153014466,
+          "mae": 0.24437382690794257,
+          "mse": 0.11008308045273657,
+          "r2": -0.14536108516367685,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_78_expected_goals.joblib",
@@ -532,9 +532,9 @@
       "expected_assists": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.018093008735183533,
-          "mse": 0.0003957826762007083,
-          "r2": 0.9992084346475986,
+          "mae": 0.017570705315866617,
+          "mse": 0.0003652157347877003,
+          "r2": 0.9992695685304246,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_78_expected_assists.joblib",
@@ -545,9 +545,9 @@
       "next_match_result": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.016834159556841734,
-          "mse": 0.0005672577346527829,
-          "r2": 0.9977309690613889,
+          "mae": 0.008235435992822664,
+          "mse": 0.0001362426982726537,
+          "r2": 0.9994550292069094,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_135_next_match_result.joblib",
@@ -556,9 +556,9 @@
       "goals_scored": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.040575765656827384,
-          "mse": 0.002680578400962,
-          "r2": 0.997319421599038,
+          "mae": 0.02000695069756222,
+          "mse": 0.0007372134260990337,
+          "r2": 0.9975567701699575,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_135_goals_scored.joblib",
@@ -567,9 +567,9 @@
       "goals_conceded": {
         "model_type": "random_forest",
         "metrics": {
-          "mae": 0.16833928571428577,
-          "mse": 0.07552191372197031,
-          "r2": 0.5972164601494916,
+          "mae": 0.0668601462829135,
+          "mse": 0.014157119541821802,
+          "r2": 0.8428469894680735,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_135_goals_conceded.joblib",
@@ -578,9 +578,9 @@
       "clean_sheet": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 9.349817923398686e-05,
-          "mse": 1.04935996603956e-08,
-          "r2": 0.9999999580256014,
+          "mae": 5.201291956484359e-05,
+          "mse": 8.137182354656186e-09,
+          "r2": 0.9999999674512706,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_135_clean_sheet.joblib",
@@ -589,9 +589,9 @@
       "both_teams_score": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.00013095311714863888,
-          "mse": 5.869522093288029e-08,
-          "r2": 0.9999997652191163,
+          "mae": 0.00013151226702526312,
+          "mse": 5.929110569385092e-08,
+          "r2": 0.9999997628355772,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_135_both_teams_score.joblib",
@@ -600,9 +600,9 @@
       "win_probability": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.016834159556841734,
-          "mse": 0.0005672577346527829,
-          "r2": 0.9977309690613889,
+          "mae": 0.008235435992822664,
+          "mse": 0.0001362426982726537,
+          "r2": 0.9994550292069094,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_135_win_probability.joblib",
@@ -633,9 +633,9 @@
       "expected_goals": {
         "model_type": "gradient_boosting",
         "metrics": {
-          "mae": 0.040575765656827384,
-          "mse": 0.002680578400962,
-          "r2": 0.997319421599038,
+          "mae": 0.02000695069756222,
+          "mse": 0.0007372134260990337,
+          "r2": 0.9975567701699575,
           "feature_count": 53
         },
         "model_path": "models\\complete_models\\complete_135_expected_goals.joblib",

@@ -9,7 +9,7 @@ from pathlib import Path
 import joblib
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScaler, RobustScaler
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import sys
 from datetime import datetime
@@ -119,8 +119,8 @@ class CompleteMLModelsAdapter:
         # Gestion des valeurs manquantes
         feature_df = feature_df.fillna(0)
         
-        # Normalisation avancee
-        scaler = StandardScaler()
+        # Normalisation robuste pour gerer tous les outliers
+        scaler = RobustScaler()
         feature_df_scaled = pd.DataFrame(
             scaler.fit_transform(feature_df),
             columns=feature_df.columns,
@@ -134,10 +134,15 @@ class CompleteMLModelsAdapter:
         
         targets = {}
         
-        # Targets de base
+        # Targets de base avec transformation logarithmique pour scores élevés
         targets['next_match_result'] = df['win_rate']
-        targets['goals_scored'] = df['goals_per_match'] 
-        targets['goals_conceded'] = df['goals_against'] / df['played'].replace(0, 1)
+        
+        # Transformation log(1+x) pour gérer tous les scores, même élevés
+        goals_per_match = df['goals_per_match'].fillna(0)
+        targets['goals_scored'] = np.log1p(goals_per_match)  # log(1+x) pour éviter log(0)
+        
+        goals_against_per_match = (df['goals_against'] / df['played'].replace(0, 1)).fillna(0)
+        targets['goals_conceded'] = np.log1p(goals_against_per_match)
         
         # Nouveaux targets avec features completes
         targets['possession_percentage'] = df.get('ball_possession_avg', 50.0)
@@ -154,7 +159,9 @@ class CompleteMLModelsAdapter:
         targets['draw_probability'] = df['draws'] / df['played'].replace(0, 1)
         targets['lose_probability'] = df['losses'] / df['played'].replace(0, 1)
         
-        targets['expected_goals'] = df['goals_for'] / df['played'].replace(0, 1)
+        # Transformation log pour expected_goals aussi
+        expected_goals_raw = (df['goals_for'] / df['played'].replace(0, 1)).fillna(0)
+        targets['expected_goals'] = np.log1p(expected_goals_raw)
         targets['expected_assists'] = df.get('top_scorer_assists', 0) / df['played'].replace(0, 1)
         targets['player_rating'] = df.get('top_scorer_rating', 6.0)
         
@@ -320,6 +327,17 @@ class CompleteMLModelsAdapter:
         print(f"Rapport: {report_path}")
         
         return report
+    
+    @staticmethod
+    def inverse_log_transform(predictions, target_type):
+        """
+        Transformation inverse pour les prédictions avec log
+        """
+        if target_type in ['goals_scored', 'goals_conceded', 'expected_goals']:
+            # Transformation inverse de log(1+x) -> exp(x) - 1
+            return np.expm1(predictions)  # expm1 = exp(x) - 1, inverse de log1p
+        else:
+            return predictions
 
 def main():
     """Fonction principale d'adaptation"""
