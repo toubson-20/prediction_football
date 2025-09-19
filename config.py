@@ -13,7 +13,7 @@ class Config:
     MODELS_DIR = DATA_DIR / "models"
     
     # API Football Configuration (API-FOOTBALL.COM)
-    FOOTBALL_API_KEY = os.getenv("FOOTBALL_API_KEY", "demo_key")
+    FOOTBALL_API_KEY = os.getenv("FOOTBALL_API_KEY", "692266271feedb5e410f7771a3e39d87")
     FOOTBALL_API_BASE_URL = "https://v3.football.api-sports.io"
     
     # Rate limiting
@@ -32,6 +32,9 @@ class Config:
     # Saisons d'entraînement (historique + actuelle)
     TRAINING_SEASONS = [2019, 2020, 2021, 2022, 2023, 2024, 2025]
     CURRENT_SEASON = 2025  # Saison active pour prédictions temps réel (2025-2026)
+    
+    # Timezone Paris pour tous les matchs
+    TIMEZONE_PARIS = "Europe/Paris"
     
     # Base de données
     DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{DATA_DIR}/football_ml.db")
